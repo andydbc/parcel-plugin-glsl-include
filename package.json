@@ -1,19 +1,22 @@
 {
-  "name": "parcel-plugin-glsl",
-  "description": "A parcel plugin for GLSL files",
+  "name": "parcel-plugin-glsl-include",
+  "description": "A parcel plugin for GLSL files with support for #include directives",
   "version": "0.1.0",
   "main": "index.js",
-  "author": "Chris Parker <seep@sent.com>",
+  "author": "Epitaque",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/seep/parcel-plugin-glsl.git"
+    "url": "git+https://github.com/epitaque/parcel-plugin-glsl-include.git"
   },
   "bugs": {
-    "url": "https://github.com/seep/parcel-plugin-glsl/issues"
+    "url": "https://github.com/epitaque/parcel-plugin-glsl-include/issues"
   },
   "keywords": [
-    "parcel", "shader", "glsl", "three.js", "webgl"
+    "parcel",
+    "shader",
+    "glsl",
+    "webgl"
   ],
   "dependencies": {
     "parcel-bundler": "*"

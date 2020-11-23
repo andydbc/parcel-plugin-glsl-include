@@ -4,14 +4,15 @@ Import `.glsl`, `.frag`, and `.vert` files as strings with [parcel](https://gith
 
 I made this because the included glsl plugin for parcel uses glslify which doesn't seem to have great support for WebGL 2 (at the time of writing).
 
-### Example
-**add2.glsl**
+### Not at all contrived example
+**add1.glsl**
 ```glsl
 int add1(int a, int b) {
     return a + b;
 }
 ```
 
+**add2.glsl**
 ```glsl
 #include "add1.glsl"
 

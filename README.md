@@ -37,7 +37,7 @@ console.log(fragmentShader);
 ```
 **Output:**
 ```glsl
- #version 300 es
+#version 300 es
 int add1(int a, int b) {
     return a + b;
 }
@@ -48,4 +48,5 @@ int add2(int a, int b, int c) {
 
 void main() {
   int test = add2(5, 5, 5);
-}```
+}
+```

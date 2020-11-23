@@ -4,6 +4,11 @@ Import `.glsl`, `.frag`, and `.vert` files as strings with [parcel](https://gith
 
 I made this because parcel's included glsl plugin uses glslify which doesn't seem to have great support for WebGL 2 (at the time of writing).
 
+### How to use
+1. Type ```npm install parcel-plugin-glsl-include --save```
+2. Run parcel normally (it detects this plugin from your packages.json), and use the syntax: `import fragmentShader from './fragment.frag';` inside you javascript files to include your shaders as text.
+
+
 ### Not at all contrived example
 **add1.glsl**
 ```glsl

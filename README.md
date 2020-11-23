@@ -1,23 +1,37 @@
-# parcel-plugin-glsl
+# parcel-plugin-glsl-include
 
-Import `.glsl` files as strings with [parcel](https://github.com/parcel-bundler/parcel). The shader
-contents are available as the default export of the file.
+Import `.glsl`, `.frag`, and `.vert` files as strings with [parcel](https://github.com/parcel-bundler/parcel). Includes support for the `#include "<filename>"` preprocessor directive inside of glsl files.
 
-#### Example
+I made this because the included glsl plugin for parcel uses glslify which doesn't seem to have great support for WebGL 2 (at the time of writing).
 
-```js
-import { ShaderMaterial } from 'three';
-import vertexShader from './vert-shader.glsl';
-import fragmentShader from './frag-shader.glsl';
-
-export function CustomShaderMaterial() {
-  
-  return new ShaderMaterial({
-    uniforms: { ... },
-    vertexShader,
-    fragmentShader,
-  });
-  
+### Example
+**add2.glsl**
+```glsl
+int add1(int a, int b) {
+    return a + b;
 }
+```
+
+```glsl
+#include "add1.glsl"
+
+int add2(int a, int b, int c) {
+    return add1(a, b) + c;
+}
+```
+
+**fragment.frag**
+```glsl
+#version 300 es
+#include "add2.glsl"
+void main() {
+  int test = add2(5, 5, 5);
+}
+```
+
+**index.js**
+```js
+import fragmentShader from './fragment.frag';
+console.log(fragmentShader);
 ```
 

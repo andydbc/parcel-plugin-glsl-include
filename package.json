@@ -1,24 +1,55 @@
 {
-  "name": "parcel-plugin-glsl-include",
-  "description": "A parcel plugin for GLSL files with support for #include directives",
-  "version": "0.1.0",
-  "main": "index.js",
-  "author": "Epitaque",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/epitaque/parcel-plugin-glsl-include.git"
+  "_args": [
+    [
+      "parcel-plugin-glsl-include@0.1.0",
+      "E:\\generative\\bevel"
+    ]
+  ],
+  "_from": "parcel-plugin-glsl-include@0.1.0",
+  "_id": "parcel-plugin-glsl-include@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-kH9Zk+pTJn8LywRzmw8JKSVBA9qm6Xk8yK/dH3r4jygVJoemOTiUkVzeyvFwiMyS8FHdt+QWWSlAXJBbISQD8Q==",
+  "_location": "/parcel-plugin-glsl-include",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "parcel-plugin-glsl-include@0.1.0",
+    "name": "parcel-plugin-glsl-include",
+    "escapedName": "parcel-plugin-glsl-include",
+    "rawSpec": "0.1.0",
+    "saveSpec": null,
+    "fetchSpec": "0.1.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/parcel-plugin-glsl-include/-/parcel-plugin-glsl-include-0.1.0.tgz",
+  "_spec": "0.1.0",
+  "_where": "E:\\generative\\bevel",
+  "author": {
+    "name": "Epitaque"
   },
   "bugs": {
     "url": "https://github.com/epitaque/parcel-plugin-glsl-include/issues"
   },
+  "dependencies": {
+    "parcel-bundler": "*"
+  },
+  "description": "A parcel plugin for GLSL files with support for #include directives",
+  "homepage": "https://github.com/epitaque/parcel-plugin-glsl-include#readme",
   "keywords": [
     "parcel",
     "shader",
     "glsl",
     "webgl"
   ],
-  "dependencies": {
-    "parcel-bundler": "*"
-  }
+  "license": "MIT",
+  "main": "index.js",
+  "name": "parcel-plugin-glsl-include",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epitaque/parcel-plugin-glsl-include.git"
+  },
+  "version": "0.1.0"
 }
